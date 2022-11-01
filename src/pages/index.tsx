@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { signIn, signOut, useSession } from "next-auth/react";
+import Link from "next/link";
 import { trpc } from "../utils/trpc";
 
 function AuthShowcase() {
@@ -42,14 +43,14 @@ function TechnologyCard({
 }: TechnologyCardProps) {
   return (
     <section className="justify-center rounded border-2 border-gray-500 p-6 shadow-xl duration-500 hover:scale-105">
-      <a
+      <Link
         className="link-secondary link text-lg font-bold"
         href={documentation}
         target="_blank"
         rel="noreferrer"
       >
         {name}
-      </a>
+      </Link>
       <p>{description}</p>
     </section>
   );
