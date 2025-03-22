@@ -1,4 +1,4 @@
-# ScottyLabs Full-Stack Application Template
+# This is deprecated. Please do not use this template.
 
 - [Next-Auth.js](https://next-auth.js.org)
 - [Prisma](https://prisma.io)
